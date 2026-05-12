@@ -1,3 +1,11 @@
+#
+# To build:
+#  docker build -t birt:4.4.2 .
+#
+# To run:
+#  docker run --rm -p 8001:8080 -e FLAG="ctf{example}" birt:4.4.2
+#
+
 FROM eclipse-temurin:8-jdk-jammy
 
 ARG BIRT_VERSION=4_4_2
