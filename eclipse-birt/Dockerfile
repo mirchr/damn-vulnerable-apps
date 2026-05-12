@@ -44,7 +44,5 @@ COPY index.html "${CATALINA_HOME}/webapps/ROOT/index.html"
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-EXPOSE 8004
-
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["catalina.sh", "run"]
